@@ -13,8 +13,6 @@ def index(req):
         }
         website = link
         Web = UrlsGiven(url=link)
-        # for val in sites:
-        #     print(val)
         Web.save()
         return render(req,'index.html',context)
     return render(req,'index.html')
